@@ -11,7 +11,7 @@ module.exports = {
     build: true,
     showSpline: true,
     app: {
-      name: 'Angulr',
+      name: 'mySmartSkin',
       version: '2.2.0',
       color: {
         primary: '#7266ba',
@@ -60,6 +60,6 @@ module.exports = {
     src: ['landing/*.swig'],
     generateSitemap: false,
     generateRobotstxt: false,
-    build: true
+    build: false
   }
 }

@@ -128,6 +128,13 @@ module.exports = {
             {expand: true, src:'*.css', cwd:'src/css/', dest: 'landing/css/'},
             {src:'html/css/app.min.css', dest: 'landing/css/app.min.css'}
         ]
-    }
+    },
+    tpl: {
+        files: [
+            {expand: true, src:'*.html', cwd:'src/tpl/blocks/', dest: 'angular/tpl/blocks/'},
+            {expand: true, src:'*.html', cwd:'src/tpl/', dest: 'angular/tpl/'},
+            {expand: true, src:'*.html', cwd:'src/', dest: 'angular/'}
+        ]
 
+    }
 };

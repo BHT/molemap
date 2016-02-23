@@ -22,7 +22,7 @@ module.exports = {
             ]
         },
         options: {
-            compress: true
+            compress: false
         }
     }
 }

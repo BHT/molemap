@@ -15,13 +15,32 @@ module.exports = function(grunt) {
         'copy:libs', 
         'copy:angular', 
         'useminPrepare', 
-        'concat:generated',
-        'cssmin:generated',
-        'uglify:generated',
-        'usemin',
-        'clean:tmp'
+//        'concat:generated',
+//        'cssmin:generated',
+//        'uglify:generated',
+//        'usemin',
+//        'clean:tmp'
     ]);
     
+    gtx.alias('serve:angular', [
+        'recess:less', 
+        'clean:angular', 
+        'copy:libs', 
+        'copy:angular', 
+        'useminPrepare', 
+        'connect',
+        'watch',
+        'watch:tpl'
+//        'concat:generated',
+//        'cssmin:generated',
+//        'uglify:generated',
+//        'usemin',
+//        'clean:tmp'
+    ]);
+
+    gtx.alias('build:tpl', ['copy:tpl']);
+
+
     gtx.alias('build:html', [
         'clean:html', 
         'copy:html', 
@@ -31,6 +50,7 @@ module.exports = function(grunt) {
         'uglify:html'
     ]);
 
+
     gtx.alias('build:landing', ['copy:landing', 'swig:landing']);
 
     gtx.alias('release', ['bump-commit']);
@@ -38,6 +58,7 @@ module.exports = function(grunt) {
     gtx.alias('release-minor', ['bump-only:minor', 'release']);
     gtx.alias('release-major', ['bump-only:major', 'release']);
     gtx.alias('prerelease', ['bump-only:prerelease', 'release']);
+
 
     gtx.finalise();
 }
