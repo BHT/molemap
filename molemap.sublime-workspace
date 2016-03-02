@@ -1,0 +1,663 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"bs3pan",
+				"bs3-panel:primary	bs3-panel-primary"
+			],
+			[
+				"bs3-panel",
+				"bs3-panel:table	bs3-panel-table"
+			],
+			[
+				"bs3-pen",
+				"bs3-panel:heading	bs3-panel-heading"
+			],
+			[
+				"TEST",
+				"TEST_EMAIL"
+			],
+			[
+				"part",
+				"participant_data_combined"
+			],
+			[
+				"db_my",
+				"db_mysqldump_options"
+			],
+			[
+				"db",
+				"db_mysqldump_path"
+			],
+			[
+				"db_",
+				"db_outfile"
+			]
+		]
+	},
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "rein",
+		"selected_items":
+		[
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"reindex",
+				"AngularJS: Rebuild Search Index"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Discover Packages"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Preferences: Browse Packages"
+			],
+			[
+				"",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"lines",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"convert",
+				"Indentation: Convert to Spaces"
+			]
+		],
+		"width": 530.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/spj4g/repos/bht/molemap/src/tpl/page_self_check_2.html",
+		"/Users/spj4g/repos/bht/molemap/html/form_elements.html",
+		"/Users/spj4g/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/spj4g/repos/bht/molemap/src/tpl/ui_timeline.html",
+		"/Users/spj4g/repos/bht/molemap/src/js/config.router.js",
+		"/Users/spj4g/repos/bht/molemap/src/css/less/app.less",
+		"/Users/spj4g/repos/bht/molemap/html/js/app.src.js",
+		"/Users/spj4g/repos/bht/molemap/.tmp/concat/css/app.min.css",
+		"/Users/spj4g/repos/bht/molemap/src/css/less/mss.self-check.less",
+		"/Users/spj4g/repos/bht/molemap/angular/tpl/form_wizard.html",
+		"/Users/spj4g/repos/bht/molemap/angular/tpl/ui_buttons.html",
+		"/Users/spj4g/repos/bht/molemap/src/tpl/ui_portlet.html",
+		"/Users/spj4g/repos/bht/molemap/grunt/watch.js",
+		"/Users/spj4g/repos/bht/molemap/bower_components/bootstrap/less/utilities.less",
+		"/Users/spj4g/repos/bht/molemap/bower_components/bootstrap/less/type.less",
+		"/Users/spj4g/repos/bht/molemap/grunt/recess.js",
+		"/Users/spj4g/repos/bht/molemap/src/tpl/form_elements.html",
+		"/Users/spj4g/repos/bht/molemap/angular/tpl/page_self_check.html",
+		"/Users/spj4g/repos/bht/molemap/grunt/copy.js",
+		"/Users/spj4g/repos/bht/molemap/src/tpl/page_self_check.html",
+		"/Users/spj4g/repos/bht/molemap/src/css/less/app.utilities.less",
+		"/Users/spj4g/repos/bht/molemap/src/css/less/app.layout.less",
+		"/Users/spj4g/repos/bht/molemap/src/css/less/app.mixins.less",
+		"/Users/spj4g/repos/bht/molemap/src/css/less/md.layout.less",
+		"/Users/spj4g/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/spj4g/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/spj4g/repos/bht/molemap/html/ui_timeline.html",
+		"/Users/spj4g/repos/bht/molemap/bower_components/bootstrap/dist/css/bootstrap.css",
+		"/Users/spj4g/Library/Application Support/Sublime Text 3/Packages/AngularJS/AngularJS-completions.sublime-settings",
+		"/Users/spj4g/Library/Application Support/Sublime Text 3/Packages/AngularJS/AngularJS-sublime-package.sublime-settings",
+		"/Users/spj4g/Library/Application Support/Sublime Text 3/Packages/User/AngularJS-completions.sublime-settings",
+		"/Users/spj4g/Library/Application Support/Sublime Text 3/Packages/User/HTML.sublime-settings",
+		"/Users/spj4g/Library/Application Support/Sublime Text 3/Packages/User/JSON.sublime-settings",
+		"/Users/spj4g/repos/bht/molemap/src/tpl/app_dashboard_v1.html",
+		"/Users/spj4g/repos/bht/molemap/molemap.sublime-project",
+		"/Users/spj4g/Library/Application Support/Sublime Text 3/Packages/User/AngularJS-sublime-package.sublime-settings",
+		"/Users/spj4g/Library/Application Support/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/Users/spj4g/repos/bht/molemap/src/css/less/md.less",
+		"/Users/spj4g/repos/bht/molemap/src/css/less/app.widgets.less",
+		"/Users/spj4g/bin/dotfiles/bash/aliases",
+		"/Users/spj4g/repos/vac/vvv/www/wordpress-vacstaging/wp-content/plugins/updraftplus/admin.php",
+		"/Users/spj4g/.gitconfig",
+		"/Users/spj4g/repos/projects/enketo-express/public/assets/js/core.js",
+		"/Users/spj4g/repos/projects/enketo-express/app.js",
+		"/Users/spj4g/repos/projects/enketo-express/config/config.json",
+		"/Users/spj4g/repos/projects/enketo-express/public/js/src/main-webform.js",
+		"/Users/spj4g/repos/projects/enketo-express/app/views/styles/theme-formhub/theme-formhub.scss",
+		"/Users/spj4g/repos/projects/enketo-express/public/assets/js/calculator.js",
+		"/Users/spj4g/repos/projects/enketo-express/node_modules/enketo-core/src/js/Form.js",
+		"/Users/spj4g/repos/projects/enketo-express/public/js/src/module/controller-webform.js",
+		"/Users/spj4g/repos/projects/enketo-express/public/js/enketo-webform-edit-dev-bundle.js",
+		"/Users/spj4g/repos/projects/enketo-express/app.js.orig",
+		"/Users/spj4g/Downloads/backups/carrii/Data Dumps/Data dump 2015-11-03/SQL/2015-11-03-view_pre_assessment_questions.sql",
+		"/Users/spj4g/repos/bht/molemap/src/tpl/blocks/aside.html",
+		"/Users/spj4g/repos/bht/molemap/src/tpl/blocks/aside.right.html",
+		"/Users/spj4g/repos/bht/molemap/src/tpl/blocks/header.html",
+		"/Users/spj4g/repos/unhcr/kobo-install/env_common",
+		"/Users/spj4g/repos/unhcr/kobo-install/env_dkobo.tpl",
+		"/Users/spj4g/repos/unhcr/kobo-install/prepare.sh",
+		"/Users/spj4g/repos/unhcr/kobo-install/set_vars",
+		"/Users/spj4g/repos/unhcr/kobo-install/env_dkobo",
+		"/Users/spj4g/repos/unhcr/kobo-install/common.tpl",
+		"/Users/spj4g/Desktop/xlsform_temp.txt",
+		"/Users/spj4g/repos/bht/molemap/src/tpl/layout.html",
+		"/Users/spj4g/repos/bht/molemap/angular/index.html",
+		"/Users/spj4g/repos/bht/molemap/src/tpl/music.mtv.detail.html",
+		"/Users/spj4g/repos/bht/molemap/swig/page_profile.swig",
+		"/Users/spj4g/repos/bht/molemap/src/tpl/page_profile.html",
+		"/Users/spj4g/repos/bht/molemap/src/tpl/music.home.html",
+		"/Users/spj4g/repos/bht/molemap/angular/tpl/blocks/nav.html",
+		"/Users/spj4g/repos/bht/molemap/swig/index.swig",
+		"/Users/spj4g/repos/bht/molemap/swig/blocks/layout.html",
+		"/Users/spj4g/repos/bht/molemap/swig/blocks/aside.html",
+		"/Users/spj4g/repos/bht/molemap/GruntFile.js",
+		"/Users/spj4g/repos/bht/molemap/src/index.html",
+		"/Users/spj4g/repos/bht/molemap/grunt/connect.js",
+		"/Users/spj4g/Desktop/asdf.txt",
+		"/Users/spj4g/repos/bht/SHUTi/db/r01_phone_updated.sql",
+		"/Users/spj4g/Downloads/unspecified",
+		"/Users/spj4g/repos/bht/neo/GruntFile.js",
+		"/Users/spj4g/repos/bht/neo/src/js/config.router.js",
+		"/Users/spj4g/repos/bht/neo/grunt/copy.js",
+		"/Users/spj4g/repos/bht/neo/grunt/watch.js",
+		"/Users/spj4g/repos/bht/neo/src/tpl/blocks/header.html",
+		"/Users/spj4g/repos/bht/neo/src/tpl/blocks/nav.html",
+		"/Users/spj4g/repos/bht/neo/angular/tpl/blocks/header.html",
+		"/Users/spj4g/repos/bht/neo/src/css/less/app.layout.less",
+		"/Users/spj4g/repos/bht/neo/src/tpl/app_dashboard_v1.html",
+		"/Users/spj4g/repos/bht/neo/angular/tpl/app_dashboard_v1.html",
+		"/Users/spj4g/repos/bht/neo/angular/index.html",
+		"/Users/spj4g/repos/bht/neo/src/css/less/app.arrow.less",
+		"/Users/spj4g/repos/bht/neo/angular/js/main.js",
+		"/Users/spj4g/repos/bht/neo/angular/js/app.angular.js",
+		"/Users/spj4g/repos/bht/neo/grunt/recess.js",
+		"/Users/spj4g/repos/bht/neo/grunt/swig.js",
+		"/Users/spj4g/repos/bht/neo/src/index.html",
+		"/Users/spj4g/repos/bht/neo/grunt/connect.js",
+		"/Users/spj4g/repos/bht/neo/src/js/main.js",
+		"/Users/spj4g/repos/bht/neo/package.json",
+		"/Users/spj4g/Downloads/tmp/SHUTi-assessment-complete-email-prompts.sql",
+		"/Users/spj4g/Downloads/staging-server.txt",
+		"/Users/spj4g/repos/kobotoolbox/dist-kobo-devel-vagrant/Vagrantfile",
+		"/Users/spj4g/repos/projects/dist-kobo-devel/env/kobocat_settings.py",
+		"/Users/spj4g/Downloads/contacts.fields.txt",
+		"/Users/spj4g/Downloads/Adobe Lightroom 5 Archive/etc-hosts-adobe.txt",
+		"/Users/spj4g/Desktop/ncalc notes.txt",
+		"/Users/spj4g/Downloads/backups/carrii/notes-CARRII-unmigrated-private-data.sql",
+		"/Users/spj4g/Downloads/backups/notes-SHUTi-R01-unmigrated-private-data.sql",
+		"/Users/spj4g/repos/bht/SHUTi/app_build/config_cron",
+		"/Users/spj4g/repos/docker-shuti/ssh/authorized_keys",
+		"/Users/spj4g/repos/projects/dkobo/dkobo/koboform/api.py",
+		"/Users/spj4g/repos/projects/dkobo/scripts/start_dev",
+		"/Users/spj4g/repos/projects/dkobo/manage.py",
+		"/Users/spj4g/repos/projects/dkobo/scripts/collectstatic.sh",
+		"/Users/spj4g/repos/projects/dkobo/Gruntfile.js",
+		"/Users/spj4g/repos/projects/dkobo/dkobo/settings.py",
+		"/Users/spj4g/repos/projects/dist-kobo-devel/env/env_kobocat",
+		"/Users/spj4g/repos/projects/dist-kobo-devel/src/kobocat/onadata/libs/utils/__init__.py",
+		"/Users/spj4g/repos/projects/dist-kobo-devel/scripts/00_vagrant_up.sh",
+		"/Users/spj4g/repos/projects/dist-kobo-devel/src/kobocat/onadata/settings/common.py",
+		"/Users/spj4g/repos/projects/dist-kobo-devel/src/kobocat/onadata/apps/logger/management/commands/sync_deleted_instances_fix.py",
+		"/Users/spj4g/repos/projects/enketo-express/app/models/config-model.js",
+		"/Users/spj4g/repos/projects/enketo-express/setup/redis/conf/redis-enketo-main.conf",
+		"/Users/spj4g/repos/projects/enketo-express/app/models/cache-model.js",
+		"/Users/spj4g/repos/projects/enketo-express/.dockerignore",
+		"/Users/spj4g/repos/projects/enketo-express/.gitignore",
+		"/Users/spj4g/repos/projects/enketo-express/package.json",
+		"/Users/spj4g/repos/projects/enketo-express/setup/docker/envfile.txt"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"*.js",
+			"",
+			"*.css",
+			"*.less",
+			"/Users/spj4g/repos/bht/molemap/*.less",
+			"/Users/spj4g/repos/bht/molemap/src/css/less",
+			"/Users/spj4g/repos/bht/molemap/src",
+			"",
+			"/Users/spj4g/repos/vac/vvv/www/wordpress-vacstaging/wp-content/plugins/updraftplus/",
+			"/Users/spj4g/repos/vac/vvv/www/wordpress-vacstaging/wp-content/plugins/updraftplus/*.php",
+			"/Users/spj4g/repos/vac/vvv/www/wordpress-vacstaging/wp-content/plugins/updraftplus",
+			"*.php",
+			"*.js",
+			"public/*.js",
+			"public/",
+			"app/",
+			"app",
+			"*.js",
+			"",
+			"*.less",
+			"",
+			"*.rb",
+			"",
+			"*.rb",
+			"",
+			"*.rb",
+			"",
+			"*.rb",
+			"",
+			"2004/",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"spinner",
+			"\n          <li class=\"list-group-item\">\n            <div class=\"media\">\n              <a class=\"btn btn-md btn-default m-t-sm m-r-sm pull-left\" ui-toggle-class=\"btn-dark\" target=\"\">A</a>\n              <div class=\"mole pull-right text-warning m-t-sm hidden\">\n                <i class=\"fa fa-circle\"></i>\n              </div>\n              <div class=\"media-body\">\n                <div class=\"text-black text-md\">Asymmetrical</div>\n                <small class=\"\">One half is a very different shape than the other half</small>\n              </div>\n            </div>\n          </li>\n          <li class=\"list-group-item\">\n            <div class=\"media\">\n              <a class=\"btn btn-md btn-default m-t-sm m-r-sm pull-left\" ui-toggle-class=\"btn-dark\" target=\"\">B</a>\n              <div class=\"mole pull-right text-warning m-t-sm hidden\">\n                <i class=\"fa fa-circle\"></i>\n              </div>\n              <div class=\"media-body\">\n                <div class=\"text-black text-md\">Border Irregularity</div>\n                <small class=\"\">Border appears notched or scalloped, ragged, or poorly defined</small>\n              </div>\n            </div>\n          </li>\n\n\n\n\n        ",
+			"ui-toggle-class",
+			"text-u-c ",
+			".text-u-c ",
+			"div",
+			"option",
+			"footer",
+			"expand",
+			"hbox",
+			"w-xxl",
+			"=\"/",
+			"img",
+			"auto",
+			"complete",
+			"data-ng-include=",
+			"diff",
+			"updraftplus-credentialtest-nonce",
+			"generate_new_keypair",
+			"get_udrpc",
+			"updraft_migrate_key_create",
+			"updraft_migrate_receiving_new",
+			"key",
+			"Create a key",
+			"backup_files",
+			"updraft_backup",
+			"function updraft_backup",
+			"install",
+			"postfix",
+			"'${",
+			"}')",
+			"'${",
+			"}')",
+			"'${",
+			"^(.*)$\\n",
+			"^(.*)$",
+			"^home_(.*)$",
+			"^",
+			"electricity",
+			"<[dataitem]+ id=\"([a-z_]*)\" average=\"([0-9\\.]*)\"/>",
+			".on",
+			"edited.enketo",
+			"updateCalc",
+			"updatecalc",
+			"formupdated",
+			"on( 'formupdated'",
+			"update",
+			"trigger\\(\\s?'[a-z]+\\.enketo",
+			"on\\(\\s?'[a-z]+\\.enketo",
+			".enketo",
+			"var model",
+			"valuechange.enketo",
+			"store",
+			"appCache",
+			"formCache",
+			"FormModel",
+			"trigger(",
+			"valueupdate",
+			"valueupdated",
+			"valuechange.enketo",
+			"blur",
+			".enketo",
+			"'enketo.",
+			"enketo.",
+			"concurrency",
+			"develop",
+			"_generateWebformUrls",
+			"getExistingSurvey",
+			"api key",
+			"\"api key\"",
+			"%20",
+			"([0-9]*)",
+			"$(.*)\\n",
+			"distress",
+			"widget",
+			"CommandLineAPI",
+			"outputUpdate",
+			"calcUpdate",
+			"model ",
+			"model",
+			"outputUpdate",
+			"data-value",
+			"calcUpdate",
+			"data-value",
+			"calcUpdate",
+			"setEventHandlers",
+			"event",
+			"FormView",
+			"change",
+			"suffix",
+			"\\\"",
+			"(.*)\\n",
+			"food_poultry",
+			"food_",
+			"{",
+			"api",
+			"key",
+			"$e",
+			"kobo_wb",
+			"default_file",
+			"nginx_",
+			"KOBO_WB_SERVER_IP",
+			", ",
+			"</td>",
+			"</td>,",
+			"<td>",
+			"^([^\\w]+)$\\n",
+			"^(.+)$",
+			"^(.*)$",
+			"^(.*)$\\n",
+			"7asdf",
+			"blank",
+			"home",
+			"angular",
+			"cdl",
+			",if",
+			"stuff",
+			"calendar",
+			"navbar-brand",
+			"tpl",
+			"initConfig",
+			"grunt.",
+			"live",
+			"one_",
+			"select_one_",
+			"/* Better Font Rendering =========== */",
+			"rows",
+			"'phone_"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"'",
+			"')",
+			"'",
+			"')",
+			"'",
+			"${$1} + ",
+			"pulldata('non_food_US', 'average',' key', '${$1}')",
+			"home_",
+			"gas",
+			"$1\\t$2",
+			" ",
+			"s4parke+user$1@gmail.com",
+			"\"",
+			"${$1_fp} + ",
+			"poultry",
+			"",
+			"${",
+			"\\n",
+			"",
+			"$1\\n$1_pct_org\\n",
+			",\\nif",
+			"\\n,if",
+			"one ",
+			"",
+			"utf8",
+			"insert into participant_keys values (NULL, '*', 'p",
+			"', 1, NULL);",
+			"",
+			"\\t",
+			", ",
+			"",
+			"integer",
+			"(text)",
+			"",
+			"$1\\n$2\\n\\n",
+			"$1",
+			"pd.`$1`,",
+			"'$1',",
+			"$1'",
+			"'$1',",
+			"appraisal",
+			"'",
+			"mysqldump -u root --complete-insert --skip-opt --skip-dump-date --add-drop-table --create-options --hex-blob shuti_development $1 > ../db/seed_data/$1.sql",
+			"mysqldump -u root --complete-insert --skip-opt --skip-dump-date --add-drop-table --create-options --hex-blob shuti_development $1 > $1.sql",
+			"",
+			"\\",
+			"\"$1\",",
+			"\",",
+			"MIN(CASE prop_key WHEN '$1' THEN prop_value else null end) AS `$1`,",
+			"MIN(CASE prop_key WHEN '$1' THEN prop_value else null end) AS `$1`,\n);",
+			"INSERT INTO DUMP_PARTICIPANT_IDS VALUES ($1);",
+			",",
+			"",
+			"index.html",
+			"&nbsp;&nbsp;",
+			"/2004/",
+			"\"$1_$2_$3.html\"",
+			"%2Fuploads%2Fpics%2F$1',",
+			"',\\n'thePicture'",
+			"%2Fuploads%2Fpics%2F$1',",
+			"/uploads/pics/$1',",
+			"',\\n'thePicture'",
+			"/uploads/pics/$1$2",
+			"/uploads/pics/$1&amp;",
+			"<%= HELP_PHONE %>",
+			"",
+			"vm02",
+			"65",
+			"vm13",
+			" `$1`;",
+			" `$1`",
+			"`$1`",
+			"truncate ",
+			";",
+			"production",
+			"shuti",
+			"RS#",
+			"",
+			"=",
+			"www/wp-"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"self_ch",
+				"angular/tpl/page_self_check.html"
+			],
+			[
+				".less",
+				"bower_components/bootstrap/less/type.less"
+			],
+			[
+				"utilities",
+				"bower_components/bootstrap/less/utilities.less"
+			],
+			[
+				"portlet",
+				"src/tpl/ui_portlet.html"
+			],
+			[
+				"buttons",
+				"angular/tpl/ui_buttons.html"
+			],
+			[
+				"self_check",
+				"angular/tpl/page_self_check.html"
+			],
+			[
+				"wizard",
+				"angular/tpl/form_wizard.html"
+			],
+			[
+				"form_elements",
+				"src/tpl/form_elements.html"
+			],
+			[
+				"form.html",
+				"html/form_elements.html"
+			],
+			[
+				"utili",
+				"bower_components/bootstrap/less/utilities.less"
+			],
+			[
+				"recess",
+				"grunt/recess.js"
+			],
+			[
+				"watch",
+				"grunt/watch.js"
+			],
+			[
+				"app.less",
+				"src/css/less/app.less"
+			],
+			[
+				"src/css/app.less",
+				"src/css/less/app.less"
+			],
+			[
+				"src/js/",
+				"src/js/config.router.js"
+			],
+			[
+				"validation",
+				"src/tpl/form_validation.html"
+			],
+			[
+				"timeline",
+				"src/tpl/ui_timeline.html"
+			],
+			[
+				"grunt/copy",
+				"grunt/copy.js"
+			],
+			[
+				"bootstrap.c",
+				"bower_components/bootstrap/dist/css/bootstrap.css"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 264.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
