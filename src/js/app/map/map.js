@@ -2,6 +2,8 @@
 /*jshint unused:false */
 'use strict';
 
+
+
 app.controller('MapCtrl', ['$scope', function ($scope) {
 
     $scope.myMarkers = [];
@@ -9,8 +11,48 @@ app.controller('MapCtrl', ['$scope', function ($scope) {
     $scope.mapOptions = {
       center: new google.maps.LatLng(35.784, -78.670),
       zoom: 15,
-      mapTypeId: google.maps.MapTypeId.ROADMAP
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      disableDoubleClickZoom: true,
+      draggable: false,
+      keyboardShortcuts: false,
+      maxZoom: 15,
+      minZoom: 15,
+      panControl: false,
+      scrollwheel: false
+
     };
+
+    $scope.map3 = {
+      center: {
+        latitude: 0,
+        longitude: 0
+      },
+      zoom: 1,
+      options: {
+        mapTypeId: 'moon',
+        mapTypeControlOptions: {
+          mapTypeIds: ['moon']
+        }
+      }
+    };    
+
+    $scope.moonMapType = {
+      getTileUrl: function (coord, zoom) {
+        var normalizedCoord = getNormalizedCoord(coord, zoom);
+        if (!normalizedCoord) {
+          return null;
+        }
+        var bound = Math.pow(2, zoom);
+        return 'http://mw1.google.com/mw-planetary/lunar/lunarmaps_v1/clem_bw' +
+          '/' + zoom + '/' + normalizedCoord.x + '/' +
+          (bound - normalizedCoord.y - 1) + '.jpg';
+      },
+      tileSize: new google.maps.Size(256, 256),
+      maxZoom: 9,
+      minZoom: 0,
+      radius: 1738000,
+      name: 'Moon'
+    };    
 
     $scope.addMarker = function ($event, $params) {
       $scope.myMarkers.push(new google.maps.Marker({

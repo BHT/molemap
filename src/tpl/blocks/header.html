@@ -8,9 +8,9 @@
         </button>
         <!-- brand -->
         <a href="#/" class="navbar-brand text-lt">
-          <i class="fa fa-btc"></i>
-          <img src="img/logo.png" alt="." class="hide">
-          <span class="hidden-folded m-l-xs">{{app.name}}</span>
+        
+          <!-- <img src="img/mss_logo_170x64.png" alt="." class=""> -->
+        
         </a>
         <!-- / brand -->
       </div>
@@ -23,23 +23,23 @@
           <a href class="btn no-shadow navbar-btn" ng-click="app.settings.asideFolded = !app.settings.asideFolded">
             <i class="fa {{app.settings.asideFolded ? 'fa-indent' : 'fa-dedent'}} fa-fw"></i>
           </a>
-          <a href class="btn no-shadow navbar-btn" ui-toggle-class="show" target="#aside-user">
+          <a href class="hide btn no-shadow navbar-btn" ui-toggle-class="show" target="#aside-user">
             <i class="icon-user fa-fw"></i>
           </a>
         </div>
         <!-- / buttons -->
 
         <!-- link and dropdown -->
-        <ul class="nav navbar-nav hidden-sm">
+        <ul class="hide nav navbar-nav hidden-sm ">
           <li class="dropdown pos-stc" dropdown>
             <a href class="dropdown-toggle" dropdown-toggle>
-              <span>Mega</span> 
+              <span>Mega!</span> 
               <span class="caret"></span>
             </a>
             <div class="dropdown-menu wrapper w-full bg-white">
               <div class="row">
                 <div class="col-sm-4">
-                  <div class="m-l-xs m-t-xs m-b-xs font-bold">Pages <span class="badge badge-sm bg-success">10</span></div>
+                  <div class="m-l-xs m-t-xs m-b-xs font-bold">Pages!!! <span class="badge badge-sm bg-success">10</span></div>
                   <div class="row">
                     <div class="col-xs-6">
                       <ul class="list-unstyled l-h-2x">
@@ -161,7 +161,7 @@
         <!-- / link and dropdown -->
 
         <!-- search form -->
-        <form class="navbar-form navbar-form-sm navbar-left shift" ui-shift="prependTo" target=".navbar-collapse" role="search" ng-controller="TypeaheadDemoCtrl">
+        <form class="hide navbar-form navbar-form-sm navbar-left shift" ui-shift="prependTo" target=".navbar-collapse" role="search" ng-controller="TypeaheadDemoCtrl">
           <div class="form-group">
             <div class="input-group">
               <input type="text" ng-model="selected" typeahead="state for state in states | filter:$viewValue | limitTo:8" class="form-control input-sm bg-light no-border rounded padder" placeholder="Search projects...">
@@ -174,7 +174,7 @@
         <!-- / search form -->
 
         <!-- nabar right -->
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="hide nav navbar-nav navbar-right">
           <li class="dropdown hidden-sm" is-open="lang.isopen" dropdown>
             <a href class="dropdown-toggle" dropdown-toggle>
               {{selectLang}} <b class="caret"></b>

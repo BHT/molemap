@@ -1,7 +1,7 @@
 <!-- list -->
 <ul class="nav">
   <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
-    <span translate="aside.nav.HEADER">Navigation</span>
+    <span class="hide" translate="aside.nav.HEADER">Navigation</span>
   </li>
   <li>
     <a href class="auto">      
@@ -10,40 +10,35 @@
         <i class="fa fa-fw fa-angle-down text-active"></i>
       </span>
       <i class="glyphicon glyphicon-stats icon text-primary-dker"></i>
-      <span class="font-bold" translate="aside.nav.DASHBOARD">Dashboard</span>
+      <span class="font-bold" >Home</span>
     </a>
     <ul class="nav nav-sub dk">
       <li class="nav-sub-header">
         <a href>
-          <span translate="aside.nav.DASHBOARD">Dashboard</span>
+          <span>Home</span>
         </a>
       </li>
       <li ui-sref-active="active">
         <a ui-sref="app.dashboard-v1">
-          <span>Dashboard v1</span>
-        </a>
-      </li>
-      <li ui-sref-active="active">
-        <a ui-sref="app.dashboard-v2">
-          <b class="label bg-info pull-right">N</b>
-          <span>Dashboard v2</span>
+          <span>Home Dash 1</span>
         </a>
       </li>
     </ul>
   </li>
   <li ui-sref-active="active">
-    <a ui-sref="app.calendar">
-      <i class="glyphicon glyphicon-calendar icon text-info-dker"></i>
-      <span class="font-bold" translate="aside.nav.CALENDAR">Calendar</span>
+    <a ui-sref="app.page.core0">
+      <i class="glyphicon glyphicon-question-sign icon text-info-dker"></i>
+      <span class="font-bold" >How to Use</span>
     </a>
   </li>
   <li ui-sref-active="active">
-    <a ui-sref="app.mail.list">
-      <b class="badge bg-info pull-right">9</b>
-      <i class="glyphicon glyphicon-envelope icon text-info-lter"></i>
-      <span class="font-bold" translate="aside.nav.EMAIL">Email</span>
+    <a ui-sref="app.page.self-check">
+      <b class="badge bg-info pull-right">1</b>
+      <i class="glyphicon glyphicon-search icon text-warning"></i>
+      <span class="font-bold" >Skin Self-Check</span>
     </a>
   </li>
+
   <li>
     <a href class="auto">
       <span class="pull-right text-muted">
@@ -51,32 +46,32 @@
         <i class="fa fa-fw fa-angle-down text-active"></i>
       </span>
       <i class="glyphicon glyphicon-th-large icon text-success"></i>
-      <span class="font-bold">Apps</span>
+      <span class="font-bold">Cores</span>
     </a>
     <ul class="nav nav-sub dk">
       <li class="nav-sub-header">
         <a href>
-          <span>Apps</span>
+          <span>MySmartSkin Modules</span>
         </a>
       </li>
       <li ui-sref-active="active">
-        <a ui-sref="app.todo">
-          <span>Todo</span>
+        <a ui-sref="app.page.core1">
+          <span>Overview</span>
         </a>
       </li>
       <li ui-sref-active="active">
-        <a ui-sref="apps.note">
-          <span>Note</span>
+        <a ui-sref="music.home">
+          <span>Getting Ready</span>
         </a>
       </li>
       <li ui-sref-active="active">
         <a ui-sref="apps.contact">
-          <span>Contacts</span>
+          <span>Practicing Sun-safe Behaviors</span>
         </a>
       </li>
       <li ui-sref-active="active">
         <a ui-sref="app.weather">
-          <span>Weather</span>
+          <span>Reviewing Your Action Plan</span>
         </a>
       </li>
     </ul>
@@ -87,7 +82,7 @@
   <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
     <span translate="aside.nav.components.COMPONENTS">Components</span>
   </li>
-  <li>
+  <li class="hide">
     <a href class="auto">      
       <span class="pull-right text-muted">
         <i class="fa fa-fw fa-angle-right text"></i>
@@ -338,7 +333,7 @@
       <span translate="aside.nav.components.CHART">Chart</span>
     </a>
   </li>
-  <li ng-class="{active:$state.includes('app.page')}">
+  <li class="hide" ng-class="{active:$state.includes('app.page')}">
     <a href class="auto">
       <span class="pull-right text-muted">
         <i class="fa fa-fw fa-angle-right text"></i>
@@ -409,7 +404,7 @@
   <li class="line dk hidden-folded"></li>
 
   <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">          
-    <span translate="aside.nav.your_stuff.YOUR_STUFF">Your Stuff</span>
+    <span translate="aside.nav.your_stuff.YOUR_STUFF">My Stuff</span>
   </li>  
   <li>
     <a ui-sref="app.page.profile">

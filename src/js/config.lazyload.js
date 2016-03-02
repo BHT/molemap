@@ -52,6 +52,15 @@ angular.module('app')
     }
   )
   .constant('MODULE_CONFIG', [
+
+      {
+          name: 'uiGmapgoogle-maps',
+          files: [
+              '../bower_components/lodash/dist/lodash.js',
+              '../bower_components/angular-simple-logger/dist/angular-simple-logger.js',
+              '../bower_components/angular-google-maps/dist/angular-google-maps.js'
+          ]
+      },    
       {
           name: 'ngGrid',
           files: [
