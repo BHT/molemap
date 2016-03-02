@@ -1,0 +1,177 @@
+<div class="bg-light lter b-b wrapper-md">
+  <h1 class="m-n font-thin h3">Skin Self-Check</h1>
+</div>
+<div class="wrapper-md">
+
+
+  <tabset class="tab-container" ng-init="steps={percent:20, step1:true, step2:false, step3:false}">
+
+    <!-- tab -->
+    <tab heading="Step 1" active="steps.step1" select="steps.percent=10">
+      <p class="m-b">Please review your moles to continue</p>
+      
+      <!-- <progressbar value="steps.percent" class="progress-xs" type="info"></progressbar> -->
+      <!-- toolbar -->
+      <form name="step1" class="form-validation">
+        <div class="row">
+
+          <div class="col-sm-8">
+            <div class="panel b-a">
+              <div class="panel-heading">
+                <div data-ng-include=" 'tpl/blocks/sse-mole-toolbar.html' "></div>
+              </div>
+              <div class="panel-body">
+                <div id="sse-body-map">
+                  <img src="/angular/img/sse/01.png" alt=""></div>
+                </div>
+                <div class="panel-footer">Panel Footer</div>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="panel panel-default">
+                <div class="panel-heading form-inline">
+
+                  <div class="form-group">
+                    <label class="control-label m-r-xs">Label </label>
+                    <input class="form-control" type="text" placeholder="Mole Location">
+                  </div>
+                  
+                  
+                </div>
+
+                <div class="panel-body">
+
+
+                  <ul class="list-group alt">
+
+
+                    <li class="list-group-item">
+                      <div class="media">
+                        <a class="btn btn-md btn-default m-t-xs m-r-sm pull-left" ui-toggle-class="btn-dark" target="">A</a>
+                        <div class="mole pull-right text-warning m-t-sm hidden">
+                          <i class="fa fa-circle"></i>
+                        </div>
+                        <div class="media-body">
+                          <div class="text-black text-md">Asymmetrical</div>
+                          <small class="">One half is a very different shape than the other half</small>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="media">
+                        <a class="btn btn-md btn-default m-t-xs m-r-sm pull-left" ui-toggle-class="btn-dark" target="">B</a>
+                        <div class="mole pull-right text-warning m-t-sm hidden">
+                          <i class="fa fa-circle"></i>
+                        </div>
+                        <div class="media-body">
+                          <div class="text-black text-md">Border Irregularity</div>
+                          <small class="">Border that is notched or scalloped, ragged, or poorly defined</small>
+                        </div>
+                      </div>
+                    </li>
+
+
+                    
+                    <li class="list-group-item">
+                      <div class="media">
+                        <a class="btn btn-md btn-default m-t-xs m-r-sm pull-left" ui-toggle-class="btn-dark" target="">C</a>
+                        <div class="mole pull-right text-warning m-t-sm hidden">
+                          <i class="fa fa-circle"></i>
+                        </div>
+                        <div class="media-body">
+                          <div class="text-black text-md">Color</div>
+                          <small class="">More than one color, or multiple shades of a single color</small>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="media">
+                        <a class="btn btn-md btn-default m-t-xs m-r-sm pull-left" ui-toggle-class="btn-dark" target="">D</a>
+                        <div class="mole pull-right text-warning m-t-sm hidden">
+                          <i class="fa fa-circle"></i>
+                        </div>
+
+                        <div class="m-t-sm pull-right col-sm-4 ">
+                          <input class="" ui-jq="TouchSpin" type="text" value="0" class="" data-min='0' data-step="1" data-data-max="40" data-verticalbuttons="true" data-verticalupclass="fa fa-caret-up"  data-verticaldownclass="fa fa-caret-down">
+                        </div>              
+                        <div class="media-body">
+                          <div class="text-black text-md">Diameter</div>
+                          <small class="">Measured at widest point in millimeters (mm)</small>
+
+                        </div>
+                      </div>
+                    </li>
+
+
+                    
+                    <li class="list-group-item">
+                      <div class="media">
+                        <a class="btn btn-md btn-default m-t-xs m-r-sm pull-left" ui-toggle-class="hidden" target="#mole-e">E</a>
+                        <div class="mole pull-right text-warning m-t-sm hidden">
+                          <i class="fa fa-circle"></i>
+                        </div>
+                        <div class="media-body">
+                          <div class="text-black text-md">Evolving</div>
+                          <small class="">Changes in shape, color, size, surface, or symptoms</small>
+
+                          <textarea id="mole-e" class="form-control m-t-sm hidden" rows="2" placeholder="Describe any changes you have noticed"></textarea>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="media">
+                        <a class="btn btn-md btn-default m-t-xs m-r-sm pull-left" ui-toggle-class="hidden" target="#mole-f">F</a>
+                        <div class="mole pull-right text-warning m-t-sm hidden">
+                          <i class="fa fa-circle"></i>
+                        </div>
+                        <div class="media-body">
+                          <div class="text-black text-md">Funny Looking</div>
+                          <small class="">Compared to my other moles, it appears very different</small>
+                          <textarea id="mole-f" class="form-control m-t-sm hidden" rows="2" placeholder="Describe any changes: shape, color, size, surface, or symptoms"></textarea>
+                        </div>
+                      </div>
+                    </li>
+
+                  </ul>
+                </div> 
+
+
+              </div>
+
+              
+            </div>            
+          </form>
+
+
+
+          <!-- / tab -->
+        </tab>
+
+        <tab heading="2. Arms (front/side)" disabled="step1.$invalid" active="steps.step2" select="steps.percent=20">
+          <form name="step2" class="form-validation">
+            <p class="m-b">Please review your moles to continue</p>
+            <progressbar value="steps.percent" class="progress-xs" type="success"></progressbar>
+            <p>Your age:</p>
+            <input type="number" name="age" class="form-control" ng-model="age" required>
+            <div class="m-t m-b">
+              <button type="button" class="btn btn-default btn-rounded" ng-click="steps.step1=true">Prev</button>
+              <button type="submit" ng-disabled="step2.$invalid" class="btn btn-default btn-rounded" ng-click="steps.step3=true">Next</button>
+            </div>
+          </form>
+        </tab>
+        <!-- / tab -->
+
+        <tab heading="3. Hands" active="steps.step3" select="steps.percent=60">
+          <p class="m-b">Congraduations! You got the last step.</p>
+          <progressbar value="steps.percent" class="progress-xs" type="success"></progressbar>
+          <p>Just one click to finish it.</p>
+          <div class="m-t m-b">
+            <button type="button" class="btn btn-default btn-rounded" ng-click="steps.step2=true">Prev</button>
+            <button type="button" class="btn btn-default btn-rounded" ng-click="steps.percent=100">Click me to Finish</button>
+          </div>
+        </tab>
+        <!-- / tab -->
+
+      </tabset>
+    </div>

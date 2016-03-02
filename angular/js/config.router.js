@@ -236,6 +236,31 @@ angular.module('app')
                   url: '/docs',
                   templateUrl: 'tpl/docs.html'
               })
+              // Cores pages
+              .state('app.page.core1', {
+                  url: '/core1',
+                  templateUrl: 'tpl/page_core1.html'
+              })
+              .state('app.page.core2', {
+                  url: '/core2',
+                  templateUrl: 'tpl/page_core2.html'
+              })     
+              .state('app.page.core3', {
+                  url: '/core3',
+                  templateUrl: 'tpl/page_core3.html'
+              })
+              .state('app.page.core0', {
+                  url: '/core0',
+                  templateUrl: 'tpl/page_core0.html'
+              })
+
+              // SKin self-check
+              .state('app.page.self-check', {
+                  url: '/self-check',
+                  templateUrl: 'tpl/page_self_check.html'
+              })                     
+
+
               // others
               .state('lockme', {
                   url: '/lockme',
@@ -368,7 +393,7 @@ angular.module('app')
               })
               .state('music', {
                   url: '/music',
-                  templateUrl: 'tpl/music.html',
+                  templateUrl: layout,
                   controller: 'MusicCtrl',
                   resolve: load([
                             'com.2fdevs.videogular', 
