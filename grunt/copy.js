@@ -14,6 +14,7 @@ module.exports = {
                     'angular-bootstrap/ui-bootstrap-tpls.js',
                     'angular-bootstrap-nav-tree/dist/**',
                     'angular-file-upload/angular-file-upload.js',
+                    'angular-leaflet-directive/dist/angular-leaflet-directive.js',
                     'angular-loading-bar/build/**',
                     'angular-material/angular-material.js',
                     'angular-material/angular-material.css',
@@ -99,7 +100,8 @@ module.exports = {
                     'font-awesome/fonts/**',
                     'simple-line-icons/css/**',
                     'simple-line-icons/fonts/**',
-                    'bootstrap-rtl/dist/css/bootstrap-rtl.min.css'
+                    'bootstrap-rtl/dist/css/bootstrap-rtl.min.css',
+                    'leaflet/dist/**'
                 ],
                 dest: 'libs/assets',
                 cwd:  'bower_components',

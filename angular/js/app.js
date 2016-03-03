@@ -11,6 +11,7 @@ angular.module('app', [
     'ngTouch',
     'ngStorage',
     'ui.router',
+    'leaflet-directive',
     'ui.bootstrap',
     'ui.utils',
     'ui.load',

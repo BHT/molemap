@@ -26,6 +26,8 @@ angular.module('app')
           }
           
           $stateProvider
+
+              // default/home pages
               .state('app', {
                   abstract: true,
                   url: '/app',
@@ -46,6 +48,37 @@ angular.module('app')
                   templateUrl: 'tpl/app_dashboard_v3.html',
                   resolve: load(['js/controllers/chart.js'])
               })
+              // Cores pages
+              .state('app.page.core1', {
+                  url: '/core1',
+                  templateUrl: 'tpl/page_core1.html'
+              })
+              .state('app.page.core2', {
+                  url: '/core2',
+                  templateUrl: 'tpl/page_core2.html'
+              })     
+              .state('app.page.core3', {
+                  url: '/core3',
+                  templateUrl: 'tpl/page_core3.html'
+              })
+              .state('app.page.core0', {
+                  url: '/core0',
+                  templateUrl: 'tpl/page_core0.html'
+              })
+
+              // SKin self-check
+              .state('app.page.self-check', {
+                  url: '/self-check',
+                  templateUrl: 'tpl/page_self_check.html'
+              })  
+
+              .state('app.page.leaflet', {
+                  url: '/leaflet',
+                  templateUrl: 'tpl/page_leaflet_molemap.html',
+                  resolve: load('js/controllers/leaflet-molemap.js')
+              })
+
+              // kit ui
               .state('app.ui', {
                   url: '/ui',
                   template: '<div ui-view class="fade-in-up"></div>'
@@ -207,7 +240,7 @@ angular.module('app')
                   controller: 'XeditableCtrl',
                   resolve: load(['xeditable','js/controllers/xeditable.js'])
               })
-              // pages
+              // kit pages
               .state('app.page', {
                   url: '/page',
                   template: '<div ui-view class="fade-in-down"></div>'
@@ -235,30 +268,8 @@ angular.module('app')
               .state('app.docs', {
                   url: '/docs',
                   templateUrl: 'tpl/docs.html'
-              })
-              // Cores pages
-              .state('app.page.core1', {
-                  url: '/core1',
-                  templateUrl: 'tpl/page_core1.html'
-              })
-              .state('app.page.core2', {
-                  url: '/core2',
-                  templateUrl: 'tpl/page_core2.html'
-              })     
-              .state('app.page.core3', {
-                  url: '/core3',
-                  templateUrl: 'tpl/page_core3.html'
-              })
-              .state('app.page.core0', {
-                  url: '/core0',
-                  templateUrl: 'tpl/page_core0.html'
-              })
+              })                                   
 
-              // SKin self-check
-              .state('app.page.self-check', {
-                  url: '/self-check',
-                  templateUrl: 'tpl/page_self_check.html'
-              })                     
 
 
               // others
