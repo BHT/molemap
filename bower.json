@@ -69,7 +69,7 @@
     "jquery.sparkline": "~2.1.2",
     "jquery_appear": "~0.3.3",
     "lodash": "~4.3.0",
-    "leaflet": 
+    "leaflet": "0.7.x",
     "moment": "~2.8.3",
     "nestable": "*",
     "ng-grid": "~2.0.13",
