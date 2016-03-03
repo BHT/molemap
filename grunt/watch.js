@@ -2,6 +2,13 @@ module.exports = {
   options: {
       livereload: '<%= connect.options.livereload %>'
   },
+  grunt: {
+      files: ['GruntFile.js', 'grunt/**'],
+      tasks: ['build:angular'],
+      options: {
+        livereload: true
+      }
+  },
   angular: {
       files: ['src/**/{,*/}*.js', 'src/img/{,*/}**'],
       tasks: ['clean:angular', 'copy:angular'],

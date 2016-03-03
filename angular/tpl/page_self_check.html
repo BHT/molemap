@@ -8,35 +8,37 @@
 
     <!-- tab -->
     <tab heading="Step 1" active="steps.step1" select="steps.percent=10">
-      <p class="m-b">Please review your moles to continue</p>
+      <progressbar value="steps.percent" class="progress-xs" type="success"></progressbar>
       
       <!-- <progressbar value="steps.percent" class="progress-xs" type="info"></progressbar> -->
       <!-- toolbar -->
       <form name="step1" class="form-validation">
       <div class="row">
 
-          <div class="col-sm-8">
+          <div class="col-sm-8" style="">
                 <div class="panel b-a">
                   <div class="panel-heading">
-                    <div data-ng-include=" 'tpl/blocks/sse-mole-toolbar.html' "></div>
+                    
                   </div>
-                  <div class="panel-body">
-                    <div id="sse-body-map">
-                      <img src="/angular/img/sse/01.png" alt=""></div>
+                  <div class="panel-body" style="height:600px">
+                    <div id="sse-body-map" ng-controller="LeafletMoleMapController">
+                      <leaflet lf-center="center" defaults="defaults" layers="layers" maxBounds="maxBounds" event-broadcast="events" markers="markers" height="545px" width="700px">
+                      </leaflet>
+                    </div>
+
                   </div>
-                  <div class="panel-footer">Panel Footer</div>
+                </div>
+
+                <div class="panel-footer">
+                                    
                 </div>
           </div>
 
           <div class="col-sm-4">
                <div data-ng-include=" 'tpl/blocks/sse-mole-form.html' "></div>
-
               </div>
           </div>            
- 
-
     </form>
-
 
 
       <!-- next prev -->

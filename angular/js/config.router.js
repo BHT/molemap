@@ -69,11 +69,12 @@ angular.module('app')
               // SKin self-check
               .state('app.page.self-check', {
                   url: '/self-check',
-                  templateUrl: 'tpl/page_self_check.html'
+                  templateUrl: 'tpl/page_self_check.html',
+                  resolve: load('js/controllers/leaflet-molemap.js')
               })  
 
-              .state('app.page.leaflet', {
-                  url: '/leaflet',
+              .state('app.page.molemap', {
+                  url: '/molemap',
                   templateUrl: 'tpl/page_leaflet_molemap.html',
                   resolve: load('js/controllers/leaflet-molemap.js')
               })

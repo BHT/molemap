@@ -8,10 +8,17 @@ String.prototype.format = function() {
 };
 
 
-app.controller("LayersImageOverlayController", [ "$scope", "$log", "leafletData", "leafletBoundsHelpers", function($scope, $log, leafletData, leafletBoundsHelpers) {
+app.controller("LeafletMoleMapController", [ "$scope", "$log", "leafletData", "leafletBoundsHelpers", function($scope, $log, leafletData, leafletBoundsHelpers) {
             var maxBounds = leafletBoundsHelpers.createBoundsFromArray([[-272, -350], [272, 350]]);
             var markerCount = 0;
-            var html = '<div>Please add tag name: <input ng-model="tagNames.m{0}"/><button ng-click="remove(\'m{0}\')">remove tag</button></div>marker key: m{0}'; //.format(markerCount);
+            var html = '<div> \
+                            Location/label: \
+                            <input ng-model="tagNames.m{0}"/> \
+                            <button ng-click="remove(\'m{0}\')"> \
+                                remove \
+                            </button> \
+                        </div> \
+                        marker key: m{0}'; //.format(markerCount);
 
             var mainMarker = {
                 lat: 51,
@@ -29,7 +36,8 @@ app.controller("LayersImageOverlayController", [ "$scope", "$log", "leafletData"
                     keyboard: false,
                     scrollWheelZoom: false,
                     crs: 'Simple',
-                    maxZoom: 0
+                    maxZoom: 0,
+                    zoomControl:false
                 },
                 center: {
                     lat: 0,
@@ -47,10 +55,18 @@ app.controller("LayersImageOverlayController", [ "$scope", "$log", "leafletData"
                             layerParams: {
                                 showOnSelector: false,
                                 noWrap: true,
-                                attribution: 'demo tile'
+                                attribution: false
                             }
                         }
                     },
+                },
+                defaultIcon: {},
+                extraMarkerIcon: {
+                    type: 'extraMarker',
+                    icon: ' fa-dot-circle-o',
+                    markerColor: 'orange',
+                    prefix: 'fa',
+                    shape: 'star'
                 },
                 markers: {
                     m0: {
@@ -58,11 +74,17 @@ app.controller("LayersImageOverlayController", [ "$scope", "$log", "leafletData"
                         lng: 0,
                         //message: "I'm a static marker - m" + markerCount,
                         message: html.format(markerCount++),
-                        //getMessageScope: function() { return $scope;},
-                        icon: {},
+                        getMessageScope: function() { return $scope;},
+                        icon: {
+                            type: 'extraMarker',
+                            icon: ' fa-dot-circle-o',
+                            markerColor: 'orange',
+                            prefix: 'fa',
+                            shape: 'star'
+                        },
                         draggable: true
                     }
-                },
+                },                
                 events: { // or just {} //all events
                     markers:{
                       enable: [ 'dragend', 'click' ]
@@ -80,10 +102,16 @@ app.controller("LayersImageOverlayController", [ "$scope", "$log", "leafletData"
                     $scope.markers['m'+markerCount++] = {
                             lat: lat,
                             lng: lng,
-                            message: "I'm a static marker - m" + markerCount,
-                            //message: html.format(markerCount),
+                            //message: "I'm a static marker - m" + markerCount,
+                            message: html.format(markerCount),
                             getMessageScope: function() { return $scope;},
-                            icon: {},
+                            icon: {
+                                type: 'extraMarker',
+                                icon: ' fa-dot-circle-o',
+                                markerColor: 'green',
+                                prefix: 'fa',
+                                shape: 'star'
+                            },
                             draggable: true
                         };
                     

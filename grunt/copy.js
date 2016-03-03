@@ -101,7 +101,8 @@ module.exports = {
                     'simple-line-icons/css/**',
                     'simple-line-icons/fonts/**',
                     'bootstrap-rtl/dist/css/bootstrap-rtl.min.css',
-                    'leaflet/dist/**'
+                    'leaflet/dist/**',
+                    'Leaflet.ExtraMarkers/**'
                 ],
                 dest: 'libs/assets',
                 cwd:  'bower_components',

@@ -1,22 +1,37 @@
-<div class="wrapper-md" ng-controller="LayersImageOverlayController">
+<div class="wrapper-md" ng-controller="LeafletMoleMapController">
     <div class="panel b-a">
         <div class="panel-heading b-b b-light">Face</div>
         <div class="panel-body">
-
-
-
             <leaflet lf-center="center" defaults="defaults" layers="layers" maxBounds="maxBounds" event-broadcast="events" markers="markers" height="545px" width="700px">
-                
-                
+
             </leaflet>
         
-
         </div>
         <div class="panel-footer">
-            {{tagNames | json}}
+
+                      <div class="panel-footer">
+                  <h4>Icon Variations</h4>
+                  <p>
+                      <button ng-click="markers.m0.icon=extraMarkerIcon; markers.m0.icon.markerColor='orange'">Yellow</button>
+                      <button ng-click="markers.m0.icon=extraMarkerIcon; markers.m0.icon.markerColor='red'">Red</button>
+                      <button ng-click="markers.m0.icon=extraMarkerIcon; markers.m0.icon.markerColor='green'">Green</button>
+                  </p>
+                  <p>
+                      <button ng-click="markers.m0.icon=extraMarkerIcon; markers.m0.icon.icon='fa-tag'">Tag</button>
+                      <button ng-click="markers.m0.icon=extraMarkerIcon; markers.m0.icon.icon='fa-home'">Home</button>
+                      <button ng-click="markers.m0.icon=extraMarkerIcon; markers.m0.icon.icon='fa-cog'">Cog</button>
+                      <button ng-click="markers.m0.icon=extraMarkerIcon; markers.m0.icon.icon='fa-star'">Star</button>
+                      <button ng-click="markers.m0.icon=extraMarkerIcon; markers.m0.icon.icon='fa-certificate'">Certificate</button>
+                  </p>
+                  <p>
+                      <button ng-click="markers.m0.icon=extraMarkerIcon; markers.m0.icon.shape='square'">Square</button>
+                      <button ng-click="markers.m0.icon=extraMarkerIcon; markers.m0.icon.shape='star'">Star</button>
+                      <button ng-click="markers.m0.icon=extraMarkerIcon; markers.m0.icon.shape='circle'">Circle</button>
+                  </p>                    
+                </div>
+          </div>
+           
         </div>
     </div>
-    <div class="panel-body">
-        
-    </div>
+    
 </div>
