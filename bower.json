@@ -70,6 +70,7 @@
     "jquery_appear": "~0.3.3",
     "lodash": "~4.3.0",
     "leaflet": "0.7.x",
+    "Leaflet.ExtraMarkers": "https://github.com/coryasilva/Leaflet.ExtraMarkers/archive/v1.0.1.tar.gz",
     "moment": "~2.8.3",
     "nestable": "*",
     "ng-grid": "~2.0.13",
